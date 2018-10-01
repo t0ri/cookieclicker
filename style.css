@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 * {
     margin: 0px;
@@ -87,9 +87,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.shop-row:first-child {
-    border: none;
-}
 
 
 .shop-heading {
@@ -105,11 +102,11 @@
     padding-top: 25px;
 }
 
-
-
 .shop-row .shop-name {
     font-size: 1.25em;
 }
+
+
 .shop-row .shop-level-text {
     font-size: x-small;
     color: #707070;

@@ -205,6 +205,42 @@ let refreshFacility = function() {
 
 /********************************
 
+            Nabisco
+
+********************************/
+let acquireNabisco = document.getElementById('buy-nabisco');
+let nabiscoAuto = false;
+
+let autoNabisco = function() {
+    if (nabiscoAuto) {
+        console.log("entering function")
+        let nabiscoDouble = window.setInterval(function() {
+            console.log(cookieCount);
+            cookieCount += cookieCount;
+            refreshCookieCount();
+            console.log(cookieCount);
+        }, 300000);
+    };
+};
+
+acquireNabisco.addEventListener("click", function() {
+    console.log("button clicked");
+    if (cookieCount >= 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000) {
+        // remove cookies
+        cookieCount -= 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+        refreshCookieCount();
+
+        // set nabiscoauto true
+        nabiscoAuto = true;
+        autoNabisco();
+        if (nabiscoAuto) {
+            console.log("nabisco auto is on");
+        };
+    };
+});
+
+/********************************
+
         Production Stats
 
 ********************************/
